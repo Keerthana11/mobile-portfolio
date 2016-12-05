@@ -441,7 +441,7 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   //
-      var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+      var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
       for (var i = 0; i < randomPizzas.length; i++) {
         randomPizzas[i].style.width = newwidth + "%";
       }
@@ -490,7 +490,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 //
-var items = document.querySelectorAll('.mover');
+var items = document.getElementsByClassName('mover');
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
