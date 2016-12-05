@@ -521,8 +521,8 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  //Reducing the limit value from 200 to 20 resulted in reduction of average scripting time while scrolling
-  for (var i = 0; i < 20; i++) {
+  //Reducing the limit value from 200 to 22 resulted in reduction of average scripting time while scrolling
+  for (var i = 0; i < 22; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
